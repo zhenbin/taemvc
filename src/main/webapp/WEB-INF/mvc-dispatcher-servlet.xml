@@ -11,5 +11,8 @@
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    
+    <bean id="datasource" class="com.alibaba.appengine.api.ds.DataSourceFactory" factory-method = "getDataSource" />
+    <bean id="taeUserDAO" class="com.taetest.DAO.TaeUserDAO" />
 
 </beans>
